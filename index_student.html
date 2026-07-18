@@ -12,21 +12,30 @@
     <meta name="keywords" content="3D 배경, 배경 모델링, 포트폴리오, 취업, 언리얼엔진, 블렌더, 3D 과외">
     <meta name="description" content="20년차 배경 출신 TA가 직강하는 3D 배경 아트 포트폴리오 완성반. 압도적인 퀄리티와 제작 기간 단축으로 취업을 앞당깁니다.">
 
-    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <!-- [최적화] 구글 폰트 도메인 사전 연결 및 응답 속도 단축 최상단 배치 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link href="images/logo/favicon.png" rel="icon">
-    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    <!-- [최적화] CSS 파싱 차단 최소화를 위한 정렬 및 팝업 스타일 통합 -->
+    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.css">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="images/logo/favicon.png" rel="icon">
+
+    <!-- [최적화] 비동기 추적(defer)을 통한 런타임 성능 및 첫 화면 렌더링 속도 향상 -->
+    <script src="js/jquery-1.11.0.min.js" defer></script>
+    <script src="js/ui-easing.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js" defer></script>
+    <script src="vendor/magnific-popup/magnific-popup-options.js" defer></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -38,14 +47,14 @@
                     <div class="col-md-8">
                         <ul class="nav__list d-none d-md-block">
                             <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
-   `                         <li class="nav__list-item"><a href="index.html#about" class="hover-target">About</a></li>
+                            <li class="nav__list-item"><a href="index.html#about" class="hover-target">About</a></li>
                             <li class="nav__list-item"><a href="index.html#artwork" class="hover-target">Artwork</a></li>
                             <li class="nav__list-item"><a href="index.html#class" class="hover-target">Class</a></li>
                             <li class="nav__list-item"><a href="index.html#contact" class="hover-target">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 text-white">
-                        <a href='index.html'><img src="images/logo/logo+symbol.webp" alt="Envision Logo"></a>
+                        <a href="index.html"><img src="images/logo/logo+symbol.webp" alt="Envision Logo"></a>
                     </div>
                 </div>
             </div>
@@ -64,7 +73,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href='index.html'><img src="images/logo/logo+symbol.webp" alt="Envision Logo"></a>
+                        <a href="index.html"><img src="images/logo/logo+symbol.webp" alt="Envision Logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -72,16 +81,15 @@
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
                                 <li class="intro active"><a href="index.html#intro">Home</a></li>
-                                <li class="artwork"><a href='index.html#artwork'>Artwork</a>
+                                <li class="artwork"><a href="index.html#artwork">Artwork</a>
                                     <ul class="dropdown">
-                                        <li><a href='index.html#artwork'>강사 작품</a></li>
-                                        <li><a href='index_student.html#artwork'>학생 작품</a></li>
+                                        <li><a href="index.html#artwork">강사 작품</a></li>
+                                        <li><a href="index_student.html#artwork">학생 작품</a></li>
                                     </ul>
                                 </li>
-                                <li class='about'><a href="index.html#about">About</a></li>
-
-                                <li class='class'><a href="index.html#class">Class</a></li>
-                                <li><a href='index.html#subscribe'>Contact</a></li>
+                                <li class="about"><a href="index.html#about">About</a></li>
+                                <li class="class"><a href="index.html#class">Class</a></li>
+                                <li><a href="index.html#subscribe">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header__nav__social">
@@ -98,11 +106,11 @@
         </div>
     </header>
 
-
     <div class="preloader"></div>
 
     <section id="intro" class="scrollspy-section">
         <div class="main-slider">
+            <!-- [최적화] 첫 진입 시 보게 되는 최상단 배너의 이미지는 즉시 렌더링(LCP 향상)을 위해 loading="lazy" 완벽 배제 -->
             <div class="slider-item jarallax" data-speed="0.2">
                 <img src="images/ui/hero_1.webp" alt="banner" class="jarallax-img">
                 <div class="banner-content">
@@ -141,8 +149,6 @@
         </div>
     </section>
 
-    
-
     <section id="artwork" class="scrollspy-section bg-dark padding-large">
         <div class="container">
             <div class="row">
@@ -164,24 +170,19 @@
             </div>
 
             <div class="gallery">
-                <a href="student_05.html" target="_blank"><img src="images/artwork/student/05/student05_01.webp" loading="lazy" alt=""></a>
-
-                <a href="student_06.html" target="_blank"><img src="images/artwork/student/06/student06_01.webp" loading="lazy" alt=""></a>
-
-                <a href="student_08.html" target="_blank"><img src="images/artwork/student/08/student08_01.webp" loading="lazy" alt=""></a>
-                <a href="student_04.html" target="_blank"><img src="images/artwork/student/04/image_01.jpg" loading="lazy" alt=""></a>
-
-                <a href="student_07.html" target="_blank"><img src="images/artwork/student/07/student07_01.webp" loading="lazy" alt=""></a>
-
-                <a href="student_03.html" target="_blank"><img src="images/artwork/student/03/image_01.webp" loading="lazy" alt=""></a>
-                <a href="student_02.html" target="_blank"><img src="images/artwork/student/02/image_01.webp" loading="lazy" alt=""></a>
-                <a href="student_01.html" target="_blank"><img src="images/artwork/student/01/image_02.webp" loading="lazy" alt=""></a>
-
+                <!-- [최적화] 스크롤 도달 시 비동기 로딩되도록 지연로딩(Lazy) 철저 유지 및 이미지 대체 텍스트 보완 -->
+                <a href="student_05.html" target="_blank"><img src="images/artwork/student/05/student05_01.webp" loading="lazy" alt="Student 05 Portfolio"></a>
+                <a href="student_06.html" target="_blank"><img src="images/artwork/student/06/student06_01.webp" loading="lazy" alt="Student 06 Portfolio"></a>
+                <a href="student_08.html" target="_blank"><img src="images/artwork/student/08/student08_01.webp" loading="lazy" alt="Student 08 Portfolio"></a>
+                <!-- [주의] 이 포트폴리오만 JPG 포맷이므로 레이지 로딩이 매우 결정적인 역할을 합니다. -->
+                <a href="student_04.html" target="_blank"><img src="images/artwork/student/04/image_01.jpg" loading="lazy" alt="Student 04 Portfolio"></a>
+                <a href="student_07.html" target="_blank"><img src="images/artwork/student/07/student07_01.webp" loading="lazy" alt="Student 07 Portfolio"></a>
+                <a href="student_03.html" target="_blank"><img src="images/artwork/student/03/image_01.webp" loading="lazy" alt="Student 03 Portfolio"></a>
+                <a href="student_02.html" target="_blank"><img src="images/artwork/student/02/image_01.webp" loading="lazy" alt="Student 02 Portfolio"></a>
+                <a href="student_01.html" target="_blank"><img src="images/artwork/student/01/image_02.webp" loading="lazy" alt="Student 01 Portfolio"></a>
             </div>
-            
         </div>
     </section>
-
 
     <section id="about" class="about scrollspy-section padding-medium">
         <div class="container">
@@ -198,8 +199,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <figure class="image-hover-stack jarallax-keep-img">
-                        <img src="images/ui/about.webp" class="img-base" alt="about us">
-                        <img src="images/ui/about_hover.webp" class="img-hover" alt="about us hover">
+                        <img src="images/ui/about.webp" class="img-base" alt="about us" loading="lazy">
+                        <img src="images/ui/about_hover.webp" class="img-hover" alt="about us hover" loading="lazy">
                     </figure>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -241,7 +242,6 @@
         </div>
     </section>
 
-
     <section id="advantage" class="scrollspy-section padding-medium bg-dark text-white">
         <div class="container">
             <div class="row">
@@ -252,7 +252,7 @@
                         </div>
                         <h2 class="section-title text-white">학원의 '홍보'가 아닌<br>당신의 '취업'을 위한 포트폴리오</h2>
                         <p class="lead mt-3 text-light">
-                            최적화 없이 거대한 씬에 2년 이상의 시간을 갈아 넣는 방식은 학생을 위한 방식이 아닙니다  .<br>
+                            최적화 없이 거대한 씬에 2년 이상의 시간을 갈아 넣는 방식은 학생을 위한 방식이 아닙니다.<br>
                             <strong>합격의 기준은 씬의 '크기'가 아니라 '다양성'입니다.</strong> 실무 파이프라인으로 당신의 <strong>시간</strong>을 가치 있게 사용하십시오.
                         </p>
                     </div>
@@ -260,42 +260,33 @@
             </div>
 
             <div class="row gy-4">
-                <!-- 카드 01 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-4 border border-secondary rounded h-100 hover-effect bg-transparent">
                         <div class="icon mb-3 fs-1 text-primary">
                             <i class="bi bi-stack"></i>
                         </div>
                         <h3 class="h4 mb-3">회사가 원하는 포트폴리오</h3>
-                        <p class="text-secondary-50">단일 씬에 매몰되지 말고 다양한 환경의 포트폴리오를 제작하여
-                            어떤 프로젝트든 즉시 투입 가능한 인재임을 보여줘야 합니다.
-                            '다양한' 포트폴리오가 당신의 취업을 앞당깁니다.</p>
+                        <p class="text-secondary-50">단일 씬에 매몰되지 말고 다양한 환경의 포트폴리오를 제작하여 어떤 프로젝트든 즉시 투입 가능한 인재임을 보여줘야 합니다. '다양한' 포트폴리오가 당신의 취업을 앞당깁니다.</p>
                     </div>
                 </div>
 
-                <!-- 카드 02 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-4 border border-secondary rounded h-100 hover-effect bg-transparent">
                         <div class="icon mb-3 fs-1 text-primary">
                             <i class="bi bi-cpu"></i>
                         </div>
                         <h3 class="h4 mb-3">압도적 퀄리티와 생산성</h3>
-                        <p class="text-secondary-50">엔진의 고급 기술로 디테일을 끌어올리고,
-                            블루프린트와 파이썬 스크립트 기반의 자동화 툴로 작업 효율을 극대화합니다. 퀄리티와 시간,
-                            두 가지를 모두 잡는 가장 스마트한 전략입니다.</p>
+                        <p class="text-secondary-50">엔진의 고급 기술로 디테일을 끌어올리고, 블루프린트와 파이썬 스크립트 기반의 자동화 툴로 작업 효율을 극대화합니다. 퀄리티와 시간, 두 가지를 모두 잡는 가장 스마트한 전략입니다.</p>
                     </div>
                 </div>
 
-                <!-- 카드 03 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="p-4 border border-secondary rounded h-100 hover-effect bg-transparent">
                         <div class="icon mb-3 fs-1 text-primary">
                             <i class="bi bi-shield-check"></i>
                         </div>
                         <h3 class="h4 mb-3">테스트와 수습 3개월 돌파</h3>
-                        <p class="text-secondary-50">최적화가 결여된 작업 습관은 실전 테스트에서 금방 한계에 직면합니다.
-                            Envision에서 현업과 동일한 작업 공정을 경험하십시오.
-                            체득한 공정 그대로, 실무에서 흔들림 없이 당신의 실력을 증명할 수 있습니다.</p>
+                        <p class="text-secondary-50">최적화가 결여된 작업 습관은 실전 테스트에서 금방 한계에 직면합니다. Envision에서 현업과 동일한 작업 공정을 경험하십시오. 체득한 공정 그대로, 실무에서 흔들림 없이 당신의 실력을 증명할 수 있습니다.</p>
                     </div>
                 </div>
             </div>
@@ -319,7 +310,7 @@
                         <div class="row gy-4">
                             <div class="col-md-2"><span class="number">01</span></div>
                             <div class="col-md-10"><h3>실무 기준의 객관적 진단</h3></div>
-                        </div>                              
+                        </div>                               
                         <ul>
                             <li><i class="bi bi-check-circle"></i> <span>현재 작업물의 기술적 수준과 경쟁력 정밀 분석</span></li>
                             <li><i class="bi bi-check-circle"></i> <span>목표 기업 스펙에 맞춘 맞춤형 타겟팅</span></li>
@@ -333,7 +324,7 @@
                         <div class="row gy-4">
                             <div class="col-md-2"><span class="number">02</span></div>
                             <div class="col-md-10"><h3>AAA급 파이프라인</h3></div>
-                        </div>                              
+                        </div>                               
                         <ul>
                             <li><i class="bi bi-check-circle"></i> <span>실무 노하우가 담긴 효율적인 워크플로우 전수</span></li>
                             <li><i class="bi bi-check-circle"></i> <span>테셀레이션, RVT 등 하이엔드 기술 적용</span></li>
@@ -347,7 +338,7 @@
                         <div class="row gy-4">
                             <div class="col-md-2"><span class="number">03</span></div>
                             <div class="col-md-10"><h3>포트폴리오 빌드업</h3></div>
-                        </div>                              
+                        </div>                               
                         <ul>
                             <li><i class="bi bi-check-circle"></i> <span>현업 아티스트 수준의 고퀄리티 배경 제작</span></li>
                             <li><i class="bi bi-check-circle"></i> <span>1:1 밀착 피드백을 통한 밀도 있는 디테일 구현</span></li>
@@ -361,7 +352,7 @@
                         <div class="row gy-4">
                             <div class="col-md-2"><span class="number">04</span></div>
                             <div class="col-md-10"><h3>전략적 취업 지원</h3></div>
-                        </div>                              
+                        </div>                               
                         <ul>
                             <li><i class="bi bi-check-circle"></i> <span>효과적인 자기소개서 작성을 위한 피드백</span></li>
                             <li><i class="bi bi-check-circle"></i> <span>작품의 핵심 포인트 설정과 발표 기술 강화</span></li>
@@ -373,11 +364,8 @@
         </div>
     </section>
 
-<!-- 클래스 섹션 시작 -->
     <section id="class" class="class section scrollspy-section padding-large bg-grey text-dark">
         <div class="container">
-            
-            <!-- 섹션 헤더 -->
             <div class="row">
                 <div class="col-12">
                     <div class="section-header text-center mb-5">
@@ -389,21 +377,16 @@
                 </div>
             </div>
 
-            <!-- [PART 01] 정규 파이프라인 코스 (상단 3열 - 가로 나열 레이아웃) -->
             <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                
-                <!-- 작업일지 피드백반 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="p-4 bg-white shadow-sm border-0 h-100 hover-effect d-flex flex-column justify-content-between">
                         <div>
-                            <!-- 아이콘과 타이틀 가로 정렬 및 간격 조율 -->
                             <div class="d-flex align-items-center gap-3 mb-4">
                                 <div class="text-primary fs-1 lh-1">
                                     <i class="bi bi-journal-check"></i>
                                 </div>
                                 <h3 class="h3 text-dark fw-bold mb-0">작업일지 피드백반</h3>
                             </div>
-                            
                             <div class="mb-3">
                                 <span class="text-primary d-block fw-bold mb-2 card-body-label">[대상]</span>
                                 <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">혼자서 충분히 작업은 가능하지만 피드백이 필요한 숙련자</p>
@@ -416,18 +399,15 @@
                     </div>
                 </div>
 
-                <!-- 그룹 시너지 클래스 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="p-4 bg-white shadow-sm rounded h-100 hover-effect d-flex flex-column justify-content-between">
                         <div>
-                            <!-- 아이콘과 타이틀 가로 정렬 및 간격 조율 -->
                             <div class="d-flex align-items-center gap-3 mb-4">
                                 <div class="text-primary fs-1 lh-1">
                                     <i class="bi bi-diagram-3-fill"></i>
                                 </div>
                                 <h3 class="h3 text-dark fw-bold mb-0">그룹 시너지 클래스</h3>
                             </div>
-                            
                             <div class="mb-3">
                                 <span class="text-primary d-block fw-bold mb-2 card-body-label">[대상]</span>
                                 <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">타인의 작업과 피드백을 보며 폭넓은 시너지를 얻고 싶은 학생</p>
@@ -440,18 +420,15 @@
                     </div>
                 </div>
 
-                <!-- 1:1 맞춤 밀착 클래스 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="p-4 bg-white shadow-sm rounded h-100 hover-effect d-flex flex-column justify-content-between">
                         <div>
-                            <!-- 아이콘과 타이틀 가로 정렬 및 간격 조율 -->
                             <div class="d-flex align-items-center gap-3 mb-4">
                                 <div class="text-primary fs-1 lh-1">
                                     <i class="bi bi-people-fill"></i>
                                 </div>
                                 <h3 class="h3 text-dark fw-bold mb-0">1:1 맞춤 밀착 클래스</h3>
                             </div>
-                            
                             <div class="mb-3">
                                 <span class="text-primary d-block fw-bold mb-2 card-body-label">[대상]</span>
                                 <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">포트폴리오를 빠르게 완성하고 싶은 학생</p>
@@ -465,18 +442,14 @@
                 </div>
             </div>
 
-            
-            <!-- 하단 안내 문구 -->
             <div class="row mt-5">
                 <div class="col-12 text-center text-muted card-body-label" data-aos="fade-up">
                     <p class="mb-0"><i class="bi bi-exclamation-circle-fill me-1 text-envision-orange"></i> 정확한 클래스 추천과 견적은 무료 진단 신청 시 현재 작업 중인 이미지나 아트스테이션 링크를 첨부해 주시면 상세히 안내해 드리겠습니다.</p>
                 </div>
             </div>
 
-            <!-- 대구분 가로 분할선 -->
             <hr class="my-5 opacity-25">
 
-            <!-- [PART 02] 실전 및 기술 스페셜 코스 (하단 와이드) -->
             <div class="row">
                 <div class="col-12 text-center mb-4" data-aos="fade-up">
                     <span class="badge px-3 py-2 rounded-pill fw-bold text-uppercase badge-special">Special Line-up</span>
@@ -484,8 +457,6 @@
             </div>
 
             <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                
-                <!-- 스페셜 01: 실무 테스트 대비반 -->
                 <div class="col-md-6">
                     <div class="p-4 bg-white shadow-sm rounded h-100 hover-effect d-flex flex-column justify-content-between border card-special">
                         <div>
@@ -495,7 +466,6 @@
                                 </div>
                                 <h3 class="h3 text-dark fw-bold mb-0">과제 테스트 대비반</h3>
                             </div>
-                            
                             <div class="mb-3">
                                 <span class="d-block fw-bold mb-1 card-body-label text-envision-orange">[대상]</span>
                                 <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">채용 과정 진행 중에 과제 테스트를 앞두고 있는 지원자</p>
@@ -508,7 +478,6 @@
                     </div>
                 </div>
 
-                <!-- 스페셜 02: Technical Art 마스터 코스 -->
                 <div class="col-md-6">
                     <div class="p-4 bg-white shadow-sm rounded h-100 hover-effect d-flex flex-column justify-content-between border card-special">
                         <div>
@@ -518,26 +487,21 @@
                                 </div>
                                 <h3 class="h3 text-dark fw-bold mb-0">Technical Art 클래스</h3>
                             </div>
-                            
                             <div class="mb-3">
                                 <span class="d-block fw-bold mb-1 card-body-label text-envision-orange">[대상]</span>
                                 <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">언리얼 엔진 5 기반의 테크니컬 아트 직군으로 이직을 목표로 하는 아티스트</p>
                             </div>
                             <div class="mb-0">
                                 <span class="d-block fw-bold mb-1 card-body-label text-envision-orange">[특징]</span>
-                                <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">하이엔드 머티리얼 구현과 블루프린트, 엔진 최적화, 나나이트,RVT 등 여러 기술은 물론 파이썬 워크플로우 자동화까지 1:1로 밀착 전수하는 코스</p>
+                                <p class="text-secondary card-body-label mb-0" style="line-height: 1.6;">하이엔드 머티리얼 구현과 블루프린트, 엔진 최적화, 나나이트, RVT 등 여러 기술은 물론 파이썬 워크플로우 자동화까지 1:1로 밀착 전수하는 코스</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     </section>
-<!-- 클래스 섹션 끝 -->
-    
+
     <section id="benefits" class="scrollspy-section bg-dark text-white padding-large">
         <div class="container">
             <div class="row mb-5">
@@ -586,19 +550,18 @@
         </div>
     </section>
 
-	<section id="subscribe" class="scrollspy-section bg-kakao padding-small">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<figure class="subscribe-image">
-						<img src="images/ui/kakao-talk.png" alt="subscribe">
-					</figure>
-				</div>
-				<div class="col-md-8">
-					<div class="subscribe-content">
+    <section id="subscribe" class="scrollspy-section bg-kakao padding-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="subscribe-image">
+                        <img src="images/ui/kakao-talk.png" alt="subscribe talk" loading="lazy">
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <div class="subscribe-content">
                         <h2 class="section-title mb-3">취업 고민, 무료 컨설팅</h2>
                         <p class="text-secondary-50"><br>"비전공자인데 가능할까?", "학원을 다녀도 왜 안 될까?"<br>
-                            
                             더 이상 혼자 고민하지 마세요. 당신의 현재 상황에 맞는 확실한 솔루션을 제시해드립니다.<br>
                             20년 노하우를 가진 전문가에게 1:1로 직접 진단받으세요.</p>
                         <form id="form">
@@ -620,7 +583,7 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="copyright">
-                        <img src="images/logo/Envision_symbol.png" alt="Envision Logo" style="height: 30px;">
+                        <img src="images/logo/Envision_symbol.png" alt="Envision Logo" style="height: 30px;" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -630,17 +593,6 @@
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="position: fixed; bottom: 20px; right: 20px; z-index: 999; width: 40px; height: 40px; border-radius: 50%;">
         <i class="bi bi-arrow-up-short" style="font-size: 24px;"></i>
     </a>
-
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/ui-easing.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="vendor/magnific-popup/magnific-popup-options.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
 
 </body>
 </html>
